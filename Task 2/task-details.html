@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details - TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">TaskFlow</div>
+        </div>
+        
+        <div class="sidebar-menu">
+            <a href="dashboard.html" class="menu-item">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="menu-item active">
+                <i class="fas fa-tasks"></i>
+                <span>My Tasks</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="back-button">
+                <a href="dashboard.html">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Dashboard
+                </a>
+            </div>
+            
+            <div class="user-menu">
+                <button class="btn-secondary">
+                    <i class="fas fa-edit"></i>
+                    Edit Task
+                </button>
+                <button class="btn-primary">
+                    <i class="fas fa-check"></i>
+                    Mark Complete
+                </button>
+            </div>
+        </header>
+
+        <div class="task-details-content">
+            <div class="task-header">
+                <div class="task-title-section">
+                    <h1>Design System Update</h1>
+                    <div class="task-meta">
+                        <span class="task-id">#TASK-1234</span>
+                        <span class="task-status in-progress">In Progress</span>
+                        <span class="task-priority high">High Priority</span>
+                    </div>
+                </div>
+                
+                <div class="task-actions">
+                    <button class="btn-icon" title="Add to Favorites">
+                        <i class="far fa-star"></i>
+                    </button>
+                    <button class="btn-icon" title="Share Task">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <button class="btn-icon" title="More Options">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="task-grid">
+                <div class="task-main">
+                    <section class="task-section">
+                        <h2>Description</h2>
+                        <p>Update the design system with new components and ensure consistency across all platforms. This includes updating the color palette, typography, and component library.</p>
+                    </section>
+
+                    <section class="task-section">
+                        <h2>Subtasks</h2>
+                        <div class="subtasks-list">
+                            <div class="subtask-item">
+                                <input type="checkbox" id="subtask1" checked>
+                                <label for="subtask1">Update color palette</label>
+                            </div>
+                            <div class="subtask-item">
+                                <input type="checkbox" id="subtask2" checked>
+                                <label for="subtask2">Review typography system</label>
+                            </div>
+                            <div class="subtask-item">
+                                <input type="checkbox" id="subtask3">
+                                <label for="subtask3">Create new component documentation</label>
+                            </div>
+                            <div class="subtask-item">
+                                <input type="checkbox" id="subtask4">
+                                <label for="subtask4">Update existing components</label>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="task-section">
+                        <h2>Comments</h2>
+                        <div class="comments-list">
+                            <div class="comment">
+                                <img src="https://via.placeholder.com/32" alt="User" class="comment-avatar">
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Sarah Johnson</span>
+                                        <span class="comment-time">2 hours ago</span>
+                                    </div>
+                                    <p>I've started working on the color palette updates. Will share the new scheme by EOD.</p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="https://via.placeholder.com/32" alt="User" class="comment-avatar">
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <span class="comment-author">Mike Chen</span>
+                                        <span class="comment-time">1 hour ago</span>
+                                    </div>
+                                    <p>Great! I'll review the typography system in parallel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-input">
+                            <img src="https://via.placeholder.com/32" alt="User" class="comment-avatar">
+                            <input type="text" placeholder="Add a comment...">
+                            <button class="btn-primary">Post</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="task-sidebar">
+                    <section class="task-section">
+                        <h2>Details</h2>
+                        <div class="details-list">
+                            <div class="detail-item">
+                                <span class="detail-label">Assigned to</span>
+                                <div class="detail-value">
+                                    <img src="https://via.placeholder.com/24" alt="User">
+                                    <span>Sarah Johnson</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Due Date</span>
+                                <span class="detail-value">Mar 15, 2024</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Created by</span>
+                                <div class="detail-value">
+                                    <img src="https://via.placeholder.com/24" alt="User">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Created on</span>
+                                <span class="detail-value">Mar 10, 2024</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="task-section">
+                        <h2>Attachments</h2>
+                        <div class="attachments-list">
+                            <div class="attachment-item">
+                                <i class="fas fa-file-pdf"></i>
+                                <span>Design System v2.0.pdf</span>
+                                <button class="btn-icon">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                            <div class="attachment-item">
+                                <i class="fas fa-file-image"></i>
+                                <span>Color Palette.png</span>
+                                <button class="btn-icon">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <button class="btn-secondary btn-block">
+                            <i class="fas fa-plus"></i>
+                            Add Attachment
+                        </button>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 

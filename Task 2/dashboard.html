@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">TaskFlow</div>
+        </div>
+        
+        <div class="sidebar-menu">
+            <a href="#" class="menu-item active">
+                <i class="fas fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-tasks"></i>
+                <span>My Tasks</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-calendar"></i>
+                <span>Calendar</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search tasks...">
+            </div>
+            
+            <div class="user-menu">
+                <button class="btn-primary">
+                    <i class="fas fa-plus"></i>
+                    New Task
+                </button>
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                    <span>John Doe</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <h1>Dashboard</h1>
+                <div class="date-filter">
+                    <button class="btn-secondary">Today</button>
+                    <button class="btn-secondary">This Week</button>
+                    <button class="btn-secondary">This Month</button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Tasks</h3>
+                    <p class="stat-number">24</p>
+                    <p class="stat-change positive">+12% from last week</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Completed</h3>
+                    <p class="stat-number">18</p>
+                    <p class="stat-change positive">+8% from last week</p>
+                </div>
+                <div class="stat-card">
+                    <h3>In Progress</h3>
+                    <p class="stat-number">4</p>
+                    <p class="stat-change negative">-2% from last week</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Overdue</h3>
+                    <p class="stat-number">2</p>
+                    <p class="stat-change negative">+1% from last week</p>
+                </div>
+            </div>
+
+            <div class="tasks-section">
+                <div class="section-header">
+                    <h2>Recent Tasks</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                
+                <div class="tasks-list">
+                    <div class="task-card">
+                        <div class="task-status completed"></div>
+                        <div class="task-content">
+                            <h3>Design System Update</h3>
+                            <p>Update the design system with new components</p>
+                            <div class="task-meta">
+                                <span class="due-date">Due: Today</span>
+                                <span class="priority high">High Priority</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="task-card">
+                        <div class="task-status in-progress"></div>
+                        <div class="task-content">
+                            <h3>User Research</h3>
+                            <p>Conduct user interviews for the new feature</p>
+                            <div class="task-meta">
+                                <span class="due-date">Due: Tomorrow</span>
+                                <span class="priority medium">Medium Priority</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="task-card">
+                        <div class="task-status pending"></div>
+                        <div class="task-content">
+                            <h3>API Documentation</h3>
+                            <p>Update API documentation for v2.0</p>
+                            <div class="task-meta">
+                                <span class="due-date">Due: Next Week</span>
+                                <span class="priority low">Low Priority</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
