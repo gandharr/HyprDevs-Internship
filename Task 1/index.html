@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System Showcase</title>
+    <link rel="stylesheet" href="design-system.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Design System Showcase</h1>
+        
+        <!-- Color Palette Section -->
+        <section class="card mt-3">
+            <h2>Color Palette</h2>
+            <div class="mt-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-md);">
+                <div>
+                    <h3>Primary Colors</h3>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                        <div style="height: 50px; background: var(--primary-500); border-radius: var(--radius-sm);"></div>
+                        <div style="height: 50px; background: var(--primary-300); border-radius: var(--radius-sm);"></div>
+                        <div style="height: 50px; background: var(--primary-700); border-radius: var(--radius-sm);"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Neutral Colors</h3>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                        <div style="height: 50px; background: var(--neutral-100); border-radius: var(--radius-sm);"></div>
+                        <div style="height: 50px; background: var(--neutral-300); border-radius: var(--radius-sm);"></div>
+                        <div style="height: 50px; background: var(--neutral-700); border-radius: var(--radius-sm);"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Semantic Colors</h3>
+                    <div style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                        <div style="height: 50px; background: var(--success-500); border-radius: var(--radius-sm);"></div>
+                        <div style="height: 50px; background: var(--error-500); border-radius: var(--radius-sm);"></div>
+                        <div style="height: 50px; background: var(--warning-500); border-radius: var(--radius-sm);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="card mt-3">
+            <h2>Typography</h2>
+            <div class="mt-2">
+                <h1>Heading 1 (4xl)</h1>
+                <h2>Heading 2 (2xl)</h2>
+                <h3>Heading 3 (xl)</h3>
+                <p style="font-size: var(--font-size-base);">Body Text (base)</p>
+                <p style="font-size: var(--font-size-sm);">Small Text (sm)</p>
+                <p style="font-size: var(--font-size-xs);">Extra Small Text (xs)</p>
+            </div>
+        </section>
+
+        <!-- Buttons Section -->
+        <section class="card mt-3">
+            <h2>Buttons</h2>
+            <div class="mt-2" style="display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+                <button class="btn btn-primary">
+                    <span class="material-icons icon">add</span>
+                    Primary Button
+                </button>
+                <button class="btn btn-secondary">
+                    <span class="material-icons icon">edit</span>
+                    Secondary Button
+                </button>
+                <button class="btn btn-success">
+                    <span class="material-icons icon">check</span>
+                    Success Button
+                </button>
+                <button class="btn btn-error">
+                    <span class="material-icons icon">error</span>
+                    Error Button
+                </button>
+            </div>
+        </section>
+
+        <!-- Input Fields Section -->
+        <section class="card mt-3">
+            <h2>Input Fields</h2>
+            <div class="mt-2">
+                <div class="input-group">
+                    <input type="text" class="input" placeholder="Default Input">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input input-success" placeholder="Success Input">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input input-error" placeholder="Error Input">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input" placeholder="Input with Icon">
+                    <span class="material-icons icon" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%);">search</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="card mt-3">
+            <h2>Cards</h2>
+            <div class="mt-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-md);">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="material-icons icon-lg">star</span>
+                        <h3>Basic Card</h3>
+                    </div>
+                    <p>This is a basic card component with some content.</p>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="material-icons icon-lg">favorite</span>
+                        <h3>Card with Footer</h3>
+                    </div>
+                    <p>This card has a footer section.</p>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Action</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Section -->
+        <section class="card mt-3">
+            <h2>Modal</h2>
+            <button class="btn btn-primary mt-2" onclick="openModal()">
+                <span class="material-icons icon">open_in_new</span>
+                Open Modal
+            </button>
+        </section>
+
+        <!-- Modal Component -->
+        <div id="demoModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>
+                        <span class="material-icons icon">info</span>
+                        Modal Title
+                    </h3>
+                    <button class="modal-close" onclick="closeModal()">
+                        <span class="material-icons icon">close</span>
+                    </button>
+                </div>
+                <p>This is a sample modal component with animation and proper styling.</p>
+                <div class="card-footer">
+                    <button class="btn btn-primary" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="design-system.js"></script>
+</body>
+</html> 
