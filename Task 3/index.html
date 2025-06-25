@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Login</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <main class="login-container">
+    <form class="login-form" id="loginForm" autocomplete="off">
+      <h1>Sign In</h1>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="you@example.com"/>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="Enter your password"/>
+      </div>
+      <button type="submit">Login</button>
+      <p class="signup-link">Don't have an account? <a href="#" id="openSignUp">Sign up</a></p>
+    </form>
+    <div id="signupModal" class="modal" aria-hidden="true" tabindex="-1">
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+        <button class="close-modal" id="closeSignUp" aria-label="Close sign up form">&times;</button>
+        <h2 id="signupTitle">Create Account</h2>
+        <form id="signupForm" autocomplete="off">
+          <div class="input-group">
+            <label for="signupEmail">Email</label>
+            <input type="email" id="signupEmail" required placeholder="you@example.com"/>
+            <span class="input-error" id="signupEmailError"></span>
+          </div>
+          <div class="input-group">
+            <label for="signupPassword">Password</label>
+            <input type="password" id="signupPassword" required placeholder="Create a password"/>
+            <span class="input-error" id="signupPasswordError"></span>
+          </div>
+          <div class="input-group">
+            <label for="signupConfirm">Confirm Password</label>
+            <input type="password" id="signupConfirm" required placeholder="Confirm your password"/>
+            <span class="input-error" id="signupConfirmError"></span>
+          </div>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html> 
