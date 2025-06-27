@@ -1,1 +1,1 @@
-Hello, This is Task Project of Gandhar for HyprDevs Internship under UI/UX Domain.
+Hello, This is Task Project from Gandhar for HyprDevs Internship under UI/UX Domain.
